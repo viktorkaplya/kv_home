@@ -6,5 +6,4 @@ services:
         ports:
             - 8080:80
         volumes:
-            - ./nginx.conf:/etc/nginx/nginx.conf
-            - ./test.html:/app/test.html
+            - ./content/:/app/content/
