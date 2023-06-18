@@ -3,7 +3,9 @@ services:
     simple-web-server:
         image: viktorkaplya/simple-webserver:education
         container_name: simple-web-server
+        environment:
+           TZ: Europe/Moscow
         ports:
             - 8080:80
-        volumes:
-            - ./content/:/app/content/
+#        volumes:
+#            - ./content/:/app/content/
